@@ -25,6 +25,7 @@ class _ProductDetailState extends State<ProductDetail> {
       });
 
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Shoe added to the cart.')));
+      Navigator.pop(context);
     } else {
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Hey! You forgot to select the shoe size.')));
     }

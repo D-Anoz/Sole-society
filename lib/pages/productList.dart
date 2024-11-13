@@ -71,6 +71,7 @@ class _ProductListState extends State<ProductList> {
                       backgroundColor: selectedFilter == shoeList ? Theme.of(context).colorScheme.primary : const Color.fromRGBO(245, 247, 249, 1),
                       label: Text(
                         shoeList,
+                        style: const TextStyle(fontWeight: FontWeight.w600),
                       ),
                       labelStyle: const TextStyle(fontSize: 16),
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
